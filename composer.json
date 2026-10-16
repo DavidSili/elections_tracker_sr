@@ -1,0 +1,19 @@
+{
+  "name": "elections/serbia-tracker",
+  "description": "Serbian parliamentary election results tracker",
+  "type": "project",
+  "require": {
+    "php": "^8.3",
+    "ext-curl": "*",
+    "ext-dom": "*",
+    "ext-mbstring": "*"
+  },
+  "require-dev": {
+    "squizlabs/php_codesniffer": "^3.13"
+  },
+  "scripts": {
+    "format": "phpcbf --standard=phpcs.xml",
+    "check": "phpcs --standard=phpcs.xml",
+    "test": "php tests/run.php"
+  }
+}

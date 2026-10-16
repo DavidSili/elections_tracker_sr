@@ -1,0 +1,11 @@
+# Local development: serve source files directly without rebuilding the image.
+services:
+  elections:
+    volumes:
+      - ./index.php:/var/www/html/index.php:ro
+      - ./admin.php:/var/www/html/admin.php:ro
+      - ./api.php:/var/www/html/api.php:ro
+      - ./.htaccess:/var/www/html/.htaccess:ro
+      - ./app:/var/www/html/app:ro
+      - ./assets:/var/www/html/assets:ro
+      - ./bin:/var/www/html/bin:ro

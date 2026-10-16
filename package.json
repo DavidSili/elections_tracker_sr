@@ -1,0 +1,17 @@
+{
+  "name": "izborni-pregled",
+  "private": true,
+  "scripts": {
+    "styles:build": "sass assets/scss/style.scss assets/style.css --style=expanded --no-source-map && prettier --write assets/style.css",
+    "styles:watch": "sass --watch assets/scss/style.scss:assets/style.css --style=expanded --no-source-map",
+    "test:http": "node tests/http.mjs",
+    "test:browser": "node tests/browser.mjs",
+    "format": "prettier --write assets/*.js tests/*.mjs assets/scss/**/*.scss assets/style.css *.json *.yaml *.md",
+    "format:check": "prettier --check assets/*.js tests/*.mjs assets/scss/**/*.scss assets/style.css *.json *.yaml *.md"
+  },
+  "devDependencies": {
+    "playwright": "^1.64.1",
+    "prettier": "^3.6.2",
+    "sass": "^1.93.2"
+  }
+}

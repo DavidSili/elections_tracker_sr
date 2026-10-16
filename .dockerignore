@@ -1,0 +1,13 @@
+.git
+.env
+.env.*
+!.env.example
+storage/*
+!storage/.htaccess
+!storage/.gitkeep
+node_modules
+vendor
+.npm-cache
+.qa
+tests
+docker-compose*.override.*
